@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#26221F"/>
+  <rect x="16" y="10" width="32" height="44" rx="8" fill="#E8DFC8"/>
+  <rect x="20" y="15" width="24" height="16" rx="2" fill="#1A1712"/>
+  <text x="32" y="28" text-anchor="middle" font-family="serif" font-weight="900" font-size="14" fill="#E8D5A8">七</text>
+  <g fill="#433018">
+    <rect x="22" y="38" width="3" height="9" rx="1"/>
+    <rect x="19.5" y="40.5" width="8" height="3" rx="1"/>
+  </g>
+  <circle cx="41" cy="39" r="2.6" fill="#D9534F"/>
+  <circle cx="45.5" cy="42.5" r="2.6" fill="#4A9FD8"/>
+  <rect x="24" y="48.5" width="16" height="1.5" rx="0.75" fill="#433018" opacity=".3"/>
+</svg>
