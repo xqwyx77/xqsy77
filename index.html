@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小七游戏 · 三款在播｜桃园将帅录 · 精灵永恒 · 小小屠龙冰雪传奇</title>
+<meta name="description" content="小七的游戏放映厅：桃园将帅录、精灵永恒、小小屠龙冰雪传奇，三款在播游戏的实机演示、海报图集与获取入口。一个页面看全，下一款作品留好了位置。">
+<meta name="keywords" content="小七游戏,桃园将帅录,精灵永恒,小小屠龙,冰雪传奇,手游,实机演示,游戏集合">
+<meta name="theme-color" content="#26221F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小七游戏 · 三款在播">
+<meta property="og:description" content="桃园将帅录、精灵永恒、小小屠龙冰雪传奇，实机演示与海报图集一站看完。">
+<meta property="og:image" content="assets/img/ty-hero.webp">
+<meta property="og:locale" content="zh_CN">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="read-progress" aria-hidden="true"><i id="readBar"></i></div>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="site-head" id="head">
+  <div class="hang" aria-hidden="true">
+    <div class="hang-rope"></div>
+    <div class="hang-ico">
+      <svg viewBox="0 0 64 64">
+        <rect x="2" y="2" width="60" height="60" rx="15" fill="#26221F"/>
+        <rect x="16" y="10" width="32" height="44" rx="8" fill="#E8DFC8"/>
+        <rect x="20" y="15" width="24" height="16" rx="2" fill="#1A1712"/>
+        <text x="32" y="28" text-anchor="middle" font-family="serif" font-weight="900" font-size="14" fill="#E8D5A8">七</text>
+        <g fill="#433018"><rect x="22" y="38" width="3" height="9" rx="1"/><rect x="19.5" y="40.5" width="8" height="3" rx="1"/></g>
+        <circle cx="41" cy="39" r="2.6" fill="#D9534F"/>
+        <circle cx="45.5" cy="42.5" r="2.6" fill="#4A9FD8"/>
+        <rect x="24" y="48.5" width="16" height="1.5" rx="0.75" fill="#433018" opacity=".3"/>
+      </svg>
+    </div>
+  </div>
+  <div class="head-inner">
+    <a class="brand" href="#top" aria-label="小七游戏 首页">
+      <span class="brand-mark" aria-hidden="true"><svg class="brand-ico" viewBox="0 0 64 64"><rect x="2" y="2" width="60" height="60" rx="15" fill="#26221F"/><rect x="16" y="10" width="32" height="44" rx="8" fill="#E8DFC8"/><rect x="20" y="15" width="24" height="16" rx="2" fill="#1A1712"/><text x="32" y="28" text-anchor="middle" font-family="serif" font-weight="900" font-size="14" fill="#E8D5A8">七</text><g fill="#433018"><rect x="22" y="38" width="3" height="9" rx="1"/><rect x="19.5" y="40.5" width="8" height="3" rx="1"/></g><circle cx="41" cy="39" r="2.6" fill="#D9534F"/><circle cx="45.5" cy="42.5" r="2.6" fill="#4A9FD8"/><rect x="24" y="48.5" width="16" height="1.5" rx="0.75" fill="#433018" opacity=".3"/></svg></span>
+      <span class="brand-text">小七游戏<small>QI'S GAME ROOM</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#screening" data-nav="screening">放映厅</a>
+      <a href="#lineup" data-nav="lineup">游戏矩阵</a>
+      <a href="#archive" data-nav="archive">游戏档案</a>
+      <a href="#about" data-nav="about">关于</a>
+    </nav>
+    <div class="head-meta" aria-label="在播数量">
+      <span class="hm-label">在播</span>
+      <b class="hm-num" id="totalCount">03</b>
+      <span class="hm-total">/ 部</span>
+    </div>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== 放映厅：主视觉 ===== -->
+  <section class="screening" id="screening" aria-label="在播游戏主视觉">
+    <div class="frame">
+      <div class="stage" id="stage" aria-hidden="true"></div>
+      <p class="corner tl">小七游戏 · 放映厅</p>
+      <p class="corner tr"><span>SCREENING ROOM</span> / <b id="cornerCount">03</b> REELS</p>
+
+      <div class="copy" id="heroCopy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span id="reelNo">REEL 01</span> · 放映中</p>
+        <h1 id="heroTitle">桃园将帅录</h1>
+        <p class="latin" id="heroLatin">TAOYUAN JIANGSHUALU</p>
+        <ul class="tags" id="heroTags" aria-label="游戏标签"></ul>
+        <p class="hook" id="heroHook"></p>
+        <div class="cta-row">
+          <button class="btn solid dl-hero" type="button" data-act="download" id="heroDlBtn">
+            <span class="dl-hero-text"><b id="heroDlMain">立即下载</b><small id="heroDlSub">下载入口</small></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+          </button>
+          <button class="btn ghost" type="button" data-act="video">
+            <span>看实机演示</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg>
+          </button>
+          <button class="btn ghost" type="button" data-act="archive">游戏档案</button>
+        </div>
+      </div>
+
+      <div class="reel-strip">
+        <div class="strip-track" id="stripTrack" aria-label="切换游戏"></div>
+        <div class="strip-foot">
+          <div class="progress" id="progress" aria-hidden="true"><i id="progressBar"></i></div>
+          <div class="strip-nav">
+            <button class="nav-btn" id="prevBtn" type="button" aria-label="上一部">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+            </button>
+            <button class="nav-btn" id="nextBtn" type="button" aria-label="下一部">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 游戏矩阵：纸质图录 ===== -->
+  <section class="lineup" id="lineup" aria-label="游戏矩阵">
+    <div class="wrap">
+      <header class="sec-head">
+        <div>
+          <p class="eyebrow dark">LINEUP / 游戏矩阵</p>
+          <h2>三款在播，<br>一条线排下去</h2>
+        </div>
+        <div class="sec-side">
+          <p class="lede">同一个版式，装得下现在的三款，也装得下下一款。主视觉、一句钩子、一段实机，位置都留好了。</p>
+          <p class="side-note"><b id="lineupCount">03</b> 在播 · <b id="seatCount">04</b> 席位预留</p>
+        </div>
+      </header>
+      <div class="filter-row" id="filterChips" role="group" aria-label="按类型筛选"></div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <!-- ===== 游戏档案 ===== -->
+  <section class="archive" id="archive" aria-label="游戏档案">
+    <div class="wrap">
+      <header class="sec-head light">
+        <div>
+          <p class="eyebrow">ARCHIVE / 游戏档案</p>
+          <h2>逐款拆开看</h2>
+        </div>
+        <div class="sec-side">
+          <p class="lede">每款只留一屏：它是什么、能玩到什么、实机长什么样。看完再决定先下哪一个。</p>
+        </div>
+      </header>
+      <div id="dossiers"></div>
+    </div>
+  </section>
+
+  <!-- ===== 收尾下载带：由 GAMES 数组自动生成 ===== -->
+  <section class="dl-band" id="downloads" aria-label="全部游戏下载入口">
+    <div class="wrap">
+      <header class="dl-band-head">
+        <p class="eyebrow">DOWNLOAD / 一键直达</p>
+        <h2>想先下哪一款</h2>
+        <p class="dl-band-lede">每款取首选入口，新标签页直达；其余平台入口与说明，见上方对应游戏档案。</p>
+      </header>
+      <div class="dl-band-grid" id="dlBand"></div>
+      <p class="dl-band-note">均为官方商店或渠道页面直达，本站仅作宣传展示、不代发安装包；建议 16 岁以上体验。</p>
+    </div>
+  </section>
+
+  <!-- ===== 微信公众号（固定品牌板块，不进入 GAMES 数组） ===== -->
+  <section class="wechat" id="wechat" aria-label="公众号关注与搜一搜引导">
+    <div class="wrap">
+      <header class="wx-head">
+        <p class="eyebrow">FOLLOW / 公众号 · 搜一搜</p>
+        <h2>关注小七公众号</h2>
+        <p class="wx-lede">左侧公众号二维码，微信扫码即可关注；右侧可在微信「搜一搜」输入「游戏推荐-小七小七」，查看在播游戏的实机与开荒内容。</p>
+      </header>
+      <div class="wx-grid">
+        <figure class="wx-card qr-card">
+          <img class="qr-img" src="assets/wechat/wx-official-qr.webp" alt="小七游戏公众号二维码，扫码关注，添加小七" loading="lazy" decoding="async">
+          <figcaption>扫码关注，添加小七</figcaption>
+        </figure>
+        <figure class="wx-card promo-card">
+          <img src="assets/wechat/wx-scan-standard.webp" alt="微信搜一搜游戏推荐-小七小七官方联合传播物料" loading="lazy" decoding="async">
+          <figcaption>微信搜一搜「游戏推荐-小七小七」</figcaption>
+        </figure>
+      </div>
+      <p class="wx-note">公众号名称以微信内实际展示为准；本站仅作宣传引导，不内嵌第三方关注组件。</p>
+    </div>
+  </section>
+
+  <!-- ===== 关于 ===== -->
+  <section class="about" id="about" aria-label="关于小七游戏">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT / 关于</p>
+        <h2>一个人玩，<br>一个人讲。</h2>
+        <p class="about-lede">小七，游戏内容博主。白天打本，晚上开播，录屏、攻略、开荒记录都发在同一处。这个站点是把在播的几款收在一起：想先看实机，点演示；想先看画风，翻图集。</p>
+        <p class="about-sign">—— 小七</p>
+      </div>
+      <ul class="notes">
+        <li><b>在播</b><span>三款：桃园将帅录、精灵永恒、小小屠龙冰雪传奇，实机与攻略按版本更新。</span></li>
+        <li><b>素材</b><span>画面、海报与游戏名称版权归各游戏官方所有，本站仅作宣传展示。</span></li>
+        <li><b>联系</b><span>内容合作与素材授权：2930865308@qq.com</span></li>
+        <li><b>适龄</b><span>本页涉及游戏均含虚拟道具与随机抽取玩法，建议 16 岁以上体验。</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="brand-mark small" aria-hidden="true"><svg class="brand-ico" viewBox="0 0 64 64"><rect x="2" y="2" width="60" height="60" rx="15" fill="#26221F"/><rect x="16" y="10" width="32" height="44" rx="8" fill="#E8DFC8"/><rect x="20" y="15" width="24" height="16" rx="2" fill="#1A1712"/><text x="32" y="28" text-anchor="middle" font-family="serif" font-weight="900" font-size="14" fill="#E8D5A8">七</text><g fill="#433018"><rect x="22" y="38" width="3" height="9" rx="1"/><rect x="19.5" y="40.5" width="8" height="3" rx="1"/></g><circle cx="41" cy="39" r="2.6" fill="#D9534F"/><circle cx="45.5" cy="42.5" r="2.6" fill="#4A9FD8"/><rect x="24" y="48.5" width="16" height="1.5" rx="0.75" fill="#433018" opacity=".3"/></svg></span>
+      <div>
+        <p>小七游戏</p>
+        <span>QI'S GAME ROOM · 2026</span>
+      </div>
+    </div>
+    <nav class="foot-nav" aria-label="页脚导航">
+      <a href="#screening">放映厅</a>
+      <a href="#lineup">游戏矩阵</a>
+      <a href="#archive">游戏档案</a>
+      <a href="#wechat">公众号</a>
+      <a href="#about">关于</a>
+    </nav>
+    <p class="foot-note">本页为个人游戏宣传集合页，非任何游戏的官方网站。素材版权归各游戏官方所有。</p>
+    <div class="foot-age"><img src="assets/img/age-16.webp" alt="适龄提示 16+ CADPA"><span>本网站所有游戏适合 16 周岁以上玩家，请合理安排游戏时间，抵制不良游戏内容。</span></div>
+  </div>
+</footer>
+
+<!-- ===== 弹层 ===== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-mask" data-close></div>
+  <div class="modal-panel">
+    <header class="modal-head">
+      <div>
+        <p class="m-eyebrow" id="mEyebrow">实机演示</p>
+        <h3 id="mTitle">标题</h3>
+      </div>
+      <button class="m-close" type="button" data-close aria-label="关闭">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+    </header>
+    <div class="m-body" id="mBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
