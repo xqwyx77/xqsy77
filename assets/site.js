@@ -70,11 +70,10 @@
         { src: 'assets/img/elf-g3.webp', alt: '圣物攻略主题封面', cap: '刷圣物攻略 · 直播封面' }
       ],
       video: { src: 'assets/video/elf-demo.mp4', poster: 'assets/video/elf-demo.webp', len: '18 秒' },
-      dlStatus: '安卓直链 · 直达',
-      downloads: [
-        { platform: '安卓 APK', label: '下载安装包（官方直链）', url: 'https://sdkn-res.39sdk.com/GamePack/1793758159game_package312-2026.apk', primary: true }
-      ],
-      dlNote: '本链接为安卓直装包；iOS 与后续版本以官方渠道及小七直播间公告为准。'
+      maintenance: true,
+      dlStatus: '维护中 · 暂未开放',
+      downloads: [],
+      dlNote: '该游戏正在维护调整，下载入口暂时关闭，恢复时间以小七直播间公告为准。'
     },
     {
       id: 'ice',
@@ -146,11 +145,10 @@
         ],
         len: '3 段 · 43 秒'
       },
-      dlStatus: '渠道下载页 · 直达',
-      downloads: [
-        { platform: '渠道下载页', label: '打开页面选择安装包下载', url: 'https://231287.youxin75.com/qudao.php?s=/Download/f/WzUyMDQsNTIwMywyMzEyODdd', primary: true }
-      ],
-      dlNote: '链接为渠道服下载页，打开后按页面提示选择版本下载；开服活动与版本更新以小七直播间公告为准。'
+      maintenance: true,
+      dlStatus: '维护中 · 暂未开放',
+      downloads: [],
+      dlNote: '该游戏正在维护调整，下载入口暂时关闭，恢复时间以小七直播间公告为准。'
     },
     {
       id: 'taoyuan',
@@ -305,14 +303,16 @@
       '<p class="card-genre">' + g.genre + '</p>' +
       '<h3 class="card-title">' + g.name + '</h3>' +
       '<p class="card-hook">' + g.cardHook + '</p>' +
-      '<div class="card-meta"><span class="card-status"><i aria-hidden="true"></i>' + g.dlStatus + '</span>' +
+      '<div class="card-meta"><span class="card-status' + (g.maintenance ? ' is-maint' : '') + '"><i aria-hidden="true"></i>' + g.dlStatus + '</span>' +
         cardPlatforms(g).map(function (p) { return '<span class="card-plat">' + p + '</span>'; }).join('') + '</div>' +
       '<ul class="card-tags">' + g.tags.map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul>' +
       '<span class="card-more"><span>查看档案</span>' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></span>' +
       '<div class="card-actions">' +
         '<button type="button" class="card-act" data-card-act="video" data-i="' + i + '">实机演示</button>' +
-        '<button type="button" class="card-act alt" data-card-act="download" data-i="' + i + '">直接下载</button>' +
+        (g.maintenance
+          ? '<button type="button" class="card-act alt disabled" disabled>暂未开放</button>'
+          : '<button type="button" class="card-act alt" data-card-act="download" data-i="' + i + '">直接下载</button>') +
       '</div>' +
       '</div></article>';
   }).join('') +
@@ -352,10 +352,12 @@
           '<span style="font-family:var(--cond);letter-spacing:.1em;opacity:.72">' + g.video.len + '</span></button>' : '<button class="btn ghost small" type="button" disabled>实机演示 · 待录制</button>') +
           '<button class="btn ghost small" type="button" data-i="' + i + '" data-act="gallery">图集 ' + total + '</button>' +
         '</div>' +
-        '<div class="dl-panel">' +
+        '<div class="dl-panel' + (g.maintenance ? ' is-maint' : '') + '">' +
           '<div class="dl-head"><span class="dl-eyebrow"><i></i>下载与入口 · DOWNLOAD</span>' +
-          '<span class="dl-status"><i></i>' + g.dlStatus + '</span></div>' +
-          '<div class="dl-rows">' + g.downloads.map(function (d, k) {
+          '<span class="dl-status' + (g.maintenance ? ' is-maint' : '') + '"><i></i>' + g.dlStatus + '</span></div>' +
+          (g.maintenance
+            ? '<div class="dl-maint">该游戏正在维护调整，下载入口暂时关闭，恢复时间以小七直播间公告为准。</div>'
+            : '<div class="dl-rows">' + g.downloads.map(function (d, k) {
             return '<a class="dl-btn' + (d.primary ? ' primary' : '') + '" href="' + d.url + '" target="_blank" rel="noopener noreferrer">' +
               '<span class="dl-text">' +
                 '<span class="dl-topline"><b class="dl-platform">' + d.platform + '</b><i class="dl-kind">' + entryKind(d) + '</i></span>' +
@@ -364,7 +366,7 @@
               '<span class="dl-go"><em>' + (k === 0 ? '下载' : '前往') + '</em>' +
               '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg></span>' +
             '</a>';
-          }).join('') + '</div>' +
+          }).join('') + '</div>') +
           '<p class="dl-note">' + g.dlNote + '</p>' +
         '</div>' +
         '<div class="d-fortune">' +
