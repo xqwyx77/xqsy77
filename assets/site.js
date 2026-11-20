@@ -17,7 +17,7 @@
       tags: ['Q版治愈', '自由转职', '社交冒险', '正版续作'],
       hook: '月光落回艾里温，这一次，我们再拾一次光。',
       cardHook: '战士、刺客、法师三系自由转，一个角色玩出三种江湖。',
-      hero: { src: 'assets/img/luna-hero.webp', alt: '《露娜2：拾光之约》主视觉：Q 版四人组站在草原上，旁边一只大白猫举着剑' },
+      hero: { src: 'assets/img/luna-hero.webp', alt: '《露娜2：拾光之约》主视觉：粉翼橘猫伫立湖畔草地，城堡风车与弯月相映，月光归航·冒险重燃' },
       card: { src: 'assets/img/luna-card.webp', alt: '《露娜2：拾光之约》冒险家大集结海报：五位主角与启程礼包面板' },
       icon: 'assets/img/luna-icon.webp',
       desc: '当年那款 Q 版卡通 MMORPG 回来了。战士前排硬刚、刺客匕首背刺、法师元素群攻，三系分支自由转；家族、组队、亲密配对一步到位，老朋友圈子还在原地等你。正版授权不魔改，童话城堡骑宠穿搭，一口回到十几年前的夏天。',
@@ -28,16 +28,11 @@
         ['Q 萌画风', '治愈系童话城堡、骑宠穿搭随便搭，红发剑士、白发刺客、绿弓手各有各的萌点。']
       ],
       gallery: [
-        { src: 'assets/img/luna-g1.webp', alt: 'Q 版多人站在城堡前庆祝：弓手、战士、法师、刺客全员到齐', cap: '全员到齐 · 城堡前合影' },
-        { src: 'assets/img/luna-g2.webp', alt: '金发白衣天使跪坐在彩虹森林中，白鸽与野花环绕', cap: '彩虹森林 · LUNA 回忆录' },
-        { src: 'assets/img/luna-g3.webp', alt: '五位 2D 立绘主角围坐山坡旁，右侧是冒险家启程礼包面板', cap: '冒险家大集结 · 启程礼包' },
-        { src: 'assets/img/luna-g4.webp', alt: 'Q 版五人在村庄广场上打扫，菜芽精与小乌龟在旁边围观', cap: '社交满格 · 家族日常' },
-        { src: 'assets/img/luna-g5.webp', alt: '六名 Q 版职业角色站在浮空岛上空，背后是云海城堡', cap: '自由转职 · 一角多面' },
-        { src: 'assets/img/luna-g6.webp', alt: '三名少女坐在森林溪边聊天，旁边是刺猬和白猫玩偶', cap: '超萌画风 · 林间小憩' },
-        { src: 'assets/img/luna-g7.webp', alt: 'Q 版小红帽与红发双马尾站在白城堡前，旁边是狼装少年', cap: '乐享欢闹 · 城堡游园' },
-        { src: 'assets/img/luna-g8.webp', alt: '十名 Q 版角色大合影，机甲、猫娘、弓手、法师全部到齐', cap: '原汁原味 · 全员集结' },
-        { src: 'assets/img/luna-job1.webp', alt: '紫袍白发刺客双人立绘，男女刺客持匕首发突进姿态', cap: '刺客系 · 紫影双杀' },
-        { src: 'assets/img/luna-job3.webp', alt: '红发双马尾女剑士与黑发红甲男剑士并肩持剑立绘', cap: '战士系 · 红衣双剑' }
+        { src: 'assets/img/luna-n1.webp', alt: '红车驶过黄昏小镇石板路，白发翼女孩坐在车里挥手，标题治愈萌系冒险·轻松启程', cap: '治愈萌系 · 轻松启程' },
+        { src: 'assets/img/luna-n2.webp', alt: '粉翼橘猫伫立湖畔草地，城堡风车与弯月相映，标题月光归航·冒险重燃', cap: '月光归航 · 冒险重燃' },
+        { src: 'assets/img/luna-n3.webp', alt: '法师立于宝石合成盘前，九宫格材料环绕城镇水岸，标题材料怎么用·先看合成', cap: '材料合成 · 避坑提示' },
+        { src: 'assets/img/luna-n4.webp', alt: '紫发粉翼精灵站在草坪图纸桌旁，白绒宠物与绿芽精相伴，标题图纸宠物都安排', cap: '图纸宠物 · 一并安排' },
+        { src: 'assets/img/luna-n5.webp', alt: '粉发恶魔少女持法杖立于锻造台旁，白胖宠物与绿芽精随行，标题图纸打造·宠物相伴', cap: '图纸打造 · 宠物相伴' }
       ],
       promos: ['公测定档 · 12 月 10 日', '预约开启 · 享多重福利', '冒险家启程 · 登录领好礼'],
       dlStatus: '官网预约 · 待开放',
