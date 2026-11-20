@@ -210,9 +210,11 @@
         { src: 'assets/img/cq-g6.webp', alt: '铠甲剑士持剑立于落日城堡前，红袍猎猎，三职业集结玛法大陆', cap: '三职业集结 · 玛法大陆' }
       ],
       promos: ['点卡计时 · 福利开服', '三职业集结 · 玛法归来', '搬砖打金 · 交易自由'],
-      dlStatus: '官网预约 · 待开放',
-      downloads: [],
-      dlNote: '下载入口稍后补充，开服活动与版本动态以小七直播间公告为准。'
+      dlStatus: '渠道下载页 · 直达',
+      downloads: [
+        { platform: '渠道下载页', label: '打开页面选择安装包下载', url: 'https://231287.youxin75.com/qudao.php?s=/Download/f/WzUyMjEsNTIyMCwyMzEyODdd', primary: true }
+      ],
+      dlNote: '链接为渠道服下载页，打开后按页面提示选择版本下载；开服活动与版本更新以小七直播间公告为准。'
     }
   ];
 
