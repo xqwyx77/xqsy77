@@ -767,13 +767,15 @@
     if (!menuOpen) return;
     menuOpen = false;
     header.classList.remove('menu-open');
-    burger.setAttribute('aria-expanded', 'false');
+    if (burger) burger.setAttribute('aria-expanded', 'false');
   }
-  burger.addEventListener('click', function () {
-    menuOpen = !menuOpen;
-    header.classList.toggle('menu-open', menuOpen);
-    burger.setAttribute('aria-expanded', String(menuOpen));
-  });
+  if (burger) {
+    burger.addEventListener('click', function () {
+      menuOpen = !menuOpen;
+      header.classList.toggle('menu-open', menuOpen);
+      burger.setAttribute('aria-expanded', String(menuOpen));
+    });
+  }
   navLinks.forEach(function (a) { a.addEventListener('click', closeMenu); });
 
   var ticking = false;
