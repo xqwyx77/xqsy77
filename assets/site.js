@@ -50,9 +50,9 @@
       tags: ['西方魔幻', 'MMORPG', '组队副本'],
       hook: '老味道的西方魔幻。组队进本，特化靠手打。',
       cardHook: '圣物、时装、坐骑，一样都得自己攒。',
-      hero: { src: 'assets/img/elf-hero.webp', alt: '《精灵永恒》主视觉：暗紫洞窟中的圣骑士、弓手、天使与刺客' },
-      card: { src: 'assets/img/elf-card.webp', alt: '《精灵永恒》战士围攻巨龙的血战海报' },
-      icon: 'assets/img/elf-icon.webp',
+      hero: { src: 'assets/img/dark-ph.webp', alt: '《精灵永恒》宣传素材筹备中' },
+      card: { src: 'assets/img/dark-ph.webp', alt: '《精灵永恒》宣传素材筹备中' },
+      icon: 'assets/img/dark-icon.webp',
       desc: '天使、骑士、精灵女王同框的暗紫魔幻。魔族入侵、日常副本轮着打，装备与材料从怪身上掉；圣物、时装、坐骑一级一级往上堆。',
       feats: [
         ['副本', '魔族入侵、日常副本，装备材料靠打。'],
@@ -60,11 +60,10 @@
         ['养成', '圣物、时装、坐骑，战力一点点堆起来。']
       ],
       gallery: [
-        { src: 'assets/img/elf-g1.webp', alt: '暗紫洞窟中四人同框的宝箱场景', cap: '暗紫群像 · 宝箱场景' },
-        { src: 'assets/img/elf-g2.webp', alt: '版本更新主题封面', cap: '版本更新 · 直播封面' },
-        { src: 'assets/img/elf-g3.webp', alt: '圣物攻略主题封面', cap: '刷圣物攻略 · 直播封面' }
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' },
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' },
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' }
       ],
-      video: { src: 'assets/video/elf-demo.mp4', poster: 'assets/video/elf-demo.webp', len: '18 秒' },
       maintenance: true,
       dlStatus: '维护中 · 暂未开放',
       downloads: [],
@@ -113,9 +112,9 @@
       tags: ['奇迹怀旧', '六大职业', '冰风谷'],
       hook: '那个夏天，我们在冰风谷相遇。经典回归，只为奇迹情怀发烧友而生。',
       cardHook: '六大经典职业重聚，老玩家一眼泪目。',
-      hero: { src: 'assets/img/lx-hero.webp', alt: '《英雄连城》主视觉：金翼弓箭手伫立雪山古堡前，冰原旷野' },
-      card: { src: 'assets/img/lx-card.webp', alt: '《英雄连城》海报：白发金翼女弓箭手立于冰雪城堡前' },
-      icon: 'assets/img/lx-icon.webp',
+      hero: { src: 'assets/img/dark-ph.webp', alt: '《英雄连城》宣传素材筹备中' },
+      card: { src: 'assets/img/dark-ph.webp', alt: '《英雄连城》宣传素材筹备中' },
+      icon: 'assets/img/dark-icon.webp',
       desc: '剑士、魔法师、弓箭手、魔剑士、圣导师、召唤师——奇迹里那六大经典职业一个不少。冰风谷的雪、勇者大陆的风，老地图原汁原味搬回来。怀旧服无广子纯干货，攻城守连城，行会一喊人就开。',
       feats: [
         ['职业', '六大经典职业重聚，剑士、法师、弓手、魔剑、圣导、召唤，当年选哪个现在还选哪个。'],
@@ -124,22 +123,14 @@
         ['城战', '连城攻守争夺，行会集结，主城是你的也是兄弟们的。']
       ],
       gallery: [
-        { src: 'assets/img/lx-g1.webp', alt: '六大经典职业列队：剑士、魔法师、弓箭手、魔剑士、圣导师、召唤师', cap: '六大经典职业 · 列队' },
-        { src: 'assets/img/lx-g2.webp', alt: '展翅女战士背影眺望冰风谷古堡，落雪满山', cap: '冰风谷 · 那个夏天' },
-        { src: 'assets/img/lx-g3.webp', alt: '离线挂机界面：挂机点与离线助手，自动收益', cap: '离线挂机 · 收益自动领' },
-        { src: 'assets/img/lx-g4.webp', alt: '官方公告：角色转职三转路线', cap: '角色转职 · 三转路线图' },
-        { src: 'assets/img/lx-g5.webp', alt: '连续七日登录好礼界面', cap: '七日登录 · 领专属好礼' },
-        { src: 'assets/img/lx-g6.webp', alt: '首充豪礼：龙魂神器与五重好礼', cap: '首充豪礼 · 龙魂神器' }
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' },
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' },
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' },
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' },
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' },
+        { src: 'assets/img/dark-ph.webp', alt: '图片筹备中', cap: '素材筹备中 · 待更新' }
       ],
       promos: ['七日登录 · 领专属好礼', '首充8元 · 龙魂神器', '150级三转 · 经典回归'],
-      video: {
-        segments: [
-          { src: 'assets/video/lx-demo-1.mp4', poster: 'assets/video/lx-demo-1.webp', label: '开场 · 角色与场景' },
-          { src: 'assets/video/lx-demo-2.mp4', poster: 'assets/video/lx-demo-2.webp', label: '战斗 · 实机操作' },
-          { src: 'assets/video/lx-demo-3.mp4', poster: 'assets/video/lx-demo-3.webp', label: '系统 · 界面展示' }
-        ],
-        len: '3 段 · 43 秒'
-      },
       maintenance: true,
       dlStatus: '维护中 · 暂未开放',
       downloads: [],
