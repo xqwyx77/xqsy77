@@ -301,10 +301,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offs
 .card.pop{animation:cardPop .5s var(--ease) both}
 .card.add{
   border:1px dashed rgba(23,19,15,.34);background:transparent;
-  align-items:center;justify-content:center;text-align:center;
-  padding:28px 20px;min-height:300px;gap:12px;display:flex;flex-direction:column;
+  padding:0;min-height:300px;display:flex;flex-direction:column;
+  align-items:stretch;justify-content:flex-start;text-align:center;
 }
 .card.add:hover{background:rgba(255,255,255,.28);transform:translateY(-3px);box-shadow:none}
+.add-cover{display:block;aspect-ratio:16/9;overflow:hidden;background:#EDE5D6;border-bottom:1px dashed rgba(23,19,15,.22)}
+.add-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s var(--ease)}
+.card.add:hover .add-cover img{transform:scale(1.03)}
+.add-body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px 20px 28px;flex:1}
 .add-plus{position:relative;width:46px;height:46px;margin-bottom:6px}
 .add-plus::before,.add-plus::after{content:"";position:absolute;background:rgba(23,19,15,.5)}
 .add-plus::before{left:50%;top:0;bottom:0;width:1px;transform:translateX(-50%)}
