@@ -339,10 +339,13 @@
       '</div></article>';
   }).join('') +
   '<div class="card add reveal" aria-label="席位预留">' +
-    '<span class="add-plus" aria-hidden="true"></span>' +
-    '<span class="add-no">' + nextNo + ' · 席位预留</span>' +
-    '<p class="add-title">下一款作品<br>在这里就位</p>' +
-    '<p class="add-note">主视觉、一句钩子、一段实机，按同一套版式补齐即可。</p>' +
+    '<span class="add-cover"><img src="assets/img/brand-card.webp" alt="小七游戏品牌封面：米色手绘纸感，掌机图标与品牌名" loading="lazy" decoding="async"></span>' +
+    '<div class="add-body">' +
+      '<span class="add-plus" aria-hidden="true"></span>' +
+      '<span class="add-no">' + nextNo + ' · 席位预留</span>' +
+      '<p class="add-title">下一款作品<br>在这里就位</p>' +
+      '<p class="add-note">主视觉、一句钩子、一段实机，按同一套版式补齐即可。</p>' +
+    '</div>' +
   '</div>';
 
   /* ---------- 构建游戏档案 ---------- */
