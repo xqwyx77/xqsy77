@@ -370,6 +370,33 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offs
 .notes b{font-family:var(--cond);font-size:12px;letter-spacing:.2em;color:var(--brass);font-weight:500}
 .notes span{font-size:13px;line-height:1.95;color:var(--ink2)}
 
+/* ================= 品牌尾景 ================= */
+.brand-scene{
+  position:relative;overflow:hidden;background:#211D1A;
+  height:clamp(240px,30vw,430px);
+  display:flex;justify-content:flex-end;align-items:center;
+}
+.brand-scene img{
+  height:100%;width:auto;max-width:none;display:block;
+  margin-left:auto;filter:saturate(.94) brightness(.97);
+}
+.brand-scene::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,#211D1A 0%,rgba(33,29,26,.96) 16%,rgba(33,29,26,.72) 34%,rgba(33,29,26,.30) 52%,rgba(33,29,26,0) 66%),
+    linear-gradient(180deg,#332E29 0%,rgba(51,46,41,.55) 7%,rgba(51,46,41,0) 20%),
+    linear-gradient(0deg,#211D1A 0%,rgba(33,29,26,.3) 9%,rgba(33,29,26,0) 22%);
+}
+@media(max-width:720px){
+  .brand-scene{height:190px}
+  .brand-scene::after{
+    background:
+      linear-gradient(90deg,#211D1A 0%,rgba(33,29,26,.96) 30%,rgba(33,29,26,.7) 55%,rgba(33,29,26,.2) 78%,rgba(33,29,26,0) 92%),
+      linear-gradient(180deg,#332E29 0%,rgba(51,46,41,.5) 7%,rgba(51,46,41,0) 20%),
+      linear-gradient(0deg,#211D1A 0%,rgba(33,29,26,.3) 9%,rgba(33,29,26,0) 22%);
+  }
+}
+
 /* ================= 页脚 ================= */
 .site-foot{background:#211D1A;padding:48px 0 40px;border-top:1px solid var(--line-soft)}
 .foot-grid{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center}
